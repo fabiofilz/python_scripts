@@ -87,3 +87,15 @@ for student_d in all_studants:
 # Item  4  - elemento:  2  Key:  studant_id , valor:  40
 # Item  4  - elemento:  3  Key:  depto , valor:  Retired
 
+
+d = {'k1':1,'k2':2,'k3':3}
+for item, value in d:
+    print(item, '-', value)
+
+
+print(list(d.keys()))
+# ['k1', 'k2', 'k3']
+
+# Remember that dictionaries are unordered, and that keys and values come back in arbitrary order. You can obtain a sorted list using sorted():
+print(sorted(d.values()))
+# [1, 2, 3]
