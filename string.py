@@ -29,7 +29,6 @@ s[-1]
 s[:-1]
 # 'Hello Worl'
 
-
 # Grab everything, but go in steps size of 1
 s[::1]
 'Hello World'
@@ -41,3 +40,12 @@ s[::2]
 # We can use this to print a string backwards
 s[::-1]
 # 'dlroW olleH'
+
+# Invert phase
+text = 'My name is Fabio'
+inverted_phase = ' '.join(text.split()[::-1])
+print(inverted_phase)
+
+inverted_list = text.split()[::-1]
+inverted_text = ' '.join(inverted_list)
+print(inverted_text)
